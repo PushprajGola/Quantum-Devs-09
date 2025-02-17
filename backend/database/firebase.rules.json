@@ -1,0 +1,19 @@
+{
+    "rules": {
+      ".read": "auth != null",   
+      ".write": "auth != null", 
+      "appointments": {
+        "$appointmentId": {
+          ".read": "auth != null && (auth.uid == data.userId || auth.token.admin == true)",
+          ".write": "auth != null && (auth.uid == data.userId || auth.token.admin == true)"
+        }
+      },
+      "queues": {
+        "$queueId": {
+          ".read": "auth != null && (auth.uid == data.userId || auth.token.admin == true)",
+          ".write": "auth != null && (auth.uid == data.userId || auth.token.admin == true)"
+        }
+      }
+    }
+  }
+  

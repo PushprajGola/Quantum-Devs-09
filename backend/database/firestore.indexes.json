@@ -1,0 +1,29 @@
+{
+    "indexes": [
+      {
+        "collectionGroup": "appointments",
+        "queryScope": "COLLECTION",
+        "fields": [
+          { "fieldPath": "userId", "order": "ASCENDING" },
+          { "fieldPath": "date", "order": "ASCENDING" }
+        ]
+      },
+      {
+        "collectionGroup": "appointments",
+        "queryScope": "COLLECTION",
+        "fields": [
+          { "fieldPath": "doctorId", "order": "ASCENDING" },
+          { "fieldPath": "date", "order": "ASCENDING" }
+        ]
+      },
+      {
+        "collectionGroup": "queues",
+        "queryScope": "COLLECTION",
+        "fields": [
+          { "fieldPath": "doctorId", "order": "ASCENDING" },
+          { "fieldPath": "createdAt", "order": "ASCENDING" }
+        ]
+      }
+    ]
+  }
+  

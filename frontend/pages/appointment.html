@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - VQMS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/appointment.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">VQMS</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="tracking.html">Live Tracking</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="appointment-container">
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form">
+                <label for="department">Select Department:</label>
+                <select id="department" name="department" required>
+                    <option value="general">General Medicine</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="dermatology">Dermatology</option>
+                </select>
+                
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="dr-smith">Dr. Smith</option>
+                    <option value="dr-jones">Dr. Jones</option>
+                </select>
+                
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Select Time Slot:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <button type="submit" class="btn">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 VQMS. All rights reserved.</p>
+    </footer>
+    
+    <script src="../js/appointment.js"></script>
+</body>
+</html>
